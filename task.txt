@@ -1,0 +1,56 @@
+//Question 1:
+
+class person {
+            constructor(name,age,place,job){
+                this.name = name;
+                this.age = age;
+                this.place = place;
+                this.job = job;
+    }
+   
+    getDetails(){
+        return(`The name of the person is ${this.name} and his age is ${this.age}  works at ${this.place} as a ${this.job}`)
+    }
+}
+
+let person1 = new person ("Ayesha",24,"chennai","actor")
+
+console.log(person1.getDetails());
+
+//output==>The name of the person is Ayesha and her age is 24  works at chennai as a actor
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//Question 2:
+
+ class Uber {
+            constructor(distance,rate,waitingperiod){
+                this.distance=distance;
+                this.rate=rate;
+                this.waitingperiod= waitingperiod;
+            }
+            setDistance(dist){
+                this.distance=dist;
+            }
+            getRideDetails(){
+                return(`The distance of the ride is ${this.distance} km with rate of RS.${this.rate} 
+                with a waiting period of ${this.waitingperiod} minutes`)
+    }
+    getPrice(){
+        let price =(this.distance * this.rate) + (5*this.waitingperiod)
+        return price;
+    }
+            }
+    
+
+        let uber1 = new Uber (40, 20, 10);
+        uber1.setDistance(30);
+
+        console.log(uber1.getPrice())
+        console.log(uber1.getRideDetails())
+
+
+//output==>650
+           The distance of the ride is 30 km with rate of RS.20 with a waiting period of 10 minutes
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

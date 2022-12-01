@@ -1,0 +1,119 @@
+OOPS: Object Oriented Programming
+//javascript has inherited some features from java
+//main pillar of java 
+//encapsulation , inheritance , polymorphism
+------------------------
+//encapsulation:hiding the implementation details.In which one thing is included with 
+other thing so that inclusive things will not appear.
+example: whatsapp
+---------------------
+//inheritance: a parent-child relationship, in which the class takes all the 
+characteristics of parent class.(child==>inherits==>parents)
+example: genes/dna 
+-----------
+//polymorphism: a way to achieve a single action in different ways.
+example: myself
+------------
+//classes and objects
+//methods
+//accessing
+------------------------
+class: it is a collection of properties , methods and objects.
+. classes are generally defined by using the class keyword.
+syntax: 
+class Classname{          
+        //properties
+        //methods
+        //objects
+}
+example: 
+class Movie{
+//rating , review , actor , actress, director , music director , genre
+}
+
+-----------------------
+Object:Object is called as the real time entity.(touch and feel)
+.objects are specific to the class
+syntax:
+var objectname = new Classname();
+new - new is a keyword used to create instance of an object.
+-----------------------
+constructor: to store value inside the objects.
+this: it is the temporary keyword which is pointing to the freshly created objects.
+------------------------------
+example: car 
+class Car{
+    constructor(brand ,color){
+        this.brand = brand; // key = value
+        this.color = color; 
+    }
+    printcolor(){
+    return this.color;
+}
+}
+var test = new Car("Audi", "black");
+console.log(`the color of my car is ${test.color}`);
+----------------------------------------
+//task : 
+class ==> person 
+properties = (name , age , salary , gender)
+-----------------------------------
+methods: functions
+printcolor(){
+    return this.color;
+}
+example:
+class Car {
+  constructor(brand, color) {
+    this.brand = brand; // key = value
+    this.color = color;
+  }
+  printcolor(str) {
+    return str + this.color;
+  }
+}
+var test = new Car("Audi", "black");
+var result = test.printcolor("the color of my car is ");
+console.log(result);
+-----------------------------------------------
+
+Arrow:
+ var sum = (a,b)=>a*b
+ console.log(sum(2,3))
+ ------------------------------------------------------
+ //normal function
+ function sum (a,b) {
+    return a*b
+ }
+ console.log(sum(2,3))
+ ---------------------------------------------------
+ //annonumous function
+ var sum= function (a,b) {
+    return a*b
+ }
+ console.log(sum(2,3))
+ -------------------------------------------------
+ //IIFE:-()()
+ (function(){
+    console.log("this is IIFE")
+ })()
+ ------------------------------------------
+ //with parameter
+ (function(name){
+    console.log(name);
+ })("Rupan")
+---------------------------------------
+//IIFE:- with return :
+  (function(name){
+    return name
+ })("Rupan")
+ --------------------------------------
+ arrow with return:-
+let sum =(a,b)=>{
+    var result = 100;
+    var total = result+a+b
+    return total
+ }
+ console.log(sum(100,50))
+ console.log(sum(56,200))
+ --------------------------------------------------------
