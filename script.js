@@ -11,8 +11,7 @@ class Car {
 var test = new Car("Audi", "black");
 var result = test.printcolor("the color of my car is ");
 console.log(result);
-
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //example 2
 class Circle {
   constructor(radius, color) {
@@ -46,7 +45,7 @@ console.log(obj1.radiusCircle); //get radiusCircle
 
 obj1.radiusCircle = 2.2;
 console.log(obj1.radiusCircle); //set radiusCircle  
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Task 
 //question 1
 class person {
@@ -65,6 +64,7 @@ return(`The name of the person is ${this.name} and her age is ${this.age}  works
 let person1 = new person ("Ayesha",24,"chennai","actor")
 
 console.log(person1.getDetails());
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //question 2
 
@@ -93,4 +93,4 @@ uber1.setDistance(30);
 
 console.log(uber1.getPrice())
 console.log(uber1.getRideDetails())
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
